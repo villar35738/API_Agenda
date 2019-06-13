@@ -12,17 +12,19 @@ namespace Agenda_API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        AgendaDbContext db;
+        private readonly AgendaDbContext db;
+
+        public ValuesController(AgendaDbContext db)
+        {
+            this.db = db;
+        }
+
+        //AgendaDbContext db;
 
         // GET api/values
         [HttpGet]
         public ActionResult<Agenda[]> Get()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<AgendaDbContext>();
-            optionsBuilder.UseSqlServer("user id=sa; password=HTB@2017admin; server=HABSNTBHTB0055\\SQLEXPRESS; database=API_AGENDA_DB; MultipleActiveResultSets=True");
-
-            db = new AgendaDbContext(optionsBuilder.Options);
-
             var contato = db.Agenda.ToArray();
             if (contato != null)
             {
@@ -38,11 +40,6 @@ namespace Agenda_API.Controllers
         [HttpGet("{id}")]
         public ActionResult<Agenda> Get(int id)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<AgendaDbContext>();
-            optionsBuilder.UseSqlServer("user id=sa; password=HTB@2017admin; server=HABSNTBHTB0055\\SQLEXPRESS; database=API_AGENDA_DB; MultipleActiveResultSets=True");
-
-            db = new AgendaDbContext(optionsBuilder.Options);
-
             Agenda contato = db.Agenda.Where(a => a.ID == id).FirstOrDefault();
             if (contato != null)
             {
@@ -58,15 +55,18 @@ namespace Agenda_API.Controllers
         [HttpPost]
         public void Post(Agenda agenda)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<AgendaDbContext>();
-            optionsBuilder.UseSqlServer("user id=sa; password=HTB@2017admin; server=HABSNTBHTB0055\\SQLEXPRESS; database=API_AGENDA_DB; MultipleActiveResultSets=True");
-
-            db = new AgendaDbContext(optionsBuilder.Options);
-
             try
             {
-                db.Agenda.Add(agenda);
-                db.SaveChanges();
+                if (agenda.ID == 0)
+                {
+                    db.Agenda.Add(agenda);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    db.Entry(agenda).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
             }
             catch (Exception ex)
             {
@@ -88,11 +88,6 @@ namespace Agenda_API.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<AgendaDbContext>();
-            optionsBuilder.UseSqlServer("user id=sa; password=HTB@2017admin; server=HABSNTBHTB0055\\SQLEXPRESS; database=API_AGENDA_DB; MultipleActiveResultSets=True");
-
-            db = new AgendaDbContext(optionsBuilder.Options);
-
             var contato = db.Agenda.Find(id);
             db.Agenda.Remove(contato);
             db.SaveChanges();

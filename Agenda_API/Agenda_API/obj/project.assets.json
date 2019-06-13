@@ -11804,11 +11804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT Projects\\API\\Agenda_API\\Agenda_API\\Agenda_API.csproj",
+      "projectUniqueName": "D:\\GIT Projects\\API\\API_Agenda\\Agenda_API\\Agenda_API\\Agenda_API.csproj",
       "projectName": "Agenda_API",
-      "projectPath": "D:\\GIT Projects\\API\\Agenda_API\\Agenda_API\\Agenda_API.csproj",
+      "projectPath": "D:\\GIT Projects\\API\\API_Agenda\\Agenda_API\\Agenda_API\\Agenda_API.csproj",
       "packagesPath": "C:\\Users\\sb044190\\.nuget\\packages\\",
-      "outputPath": "D:\\GIT Projects\\API\\Agenda_API\\Agenda_API\\obj\\",
+      "outputPath": "D:\\GIT Projects\\API\\API_Agenda\\Agenda_API\\Agenda_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

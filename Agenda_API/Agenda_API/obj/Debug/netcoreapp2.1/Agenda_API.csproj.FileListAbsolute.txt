@@ -26,3 +26,17 @@ D:\GIT Projects\API\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.Ass
 D:\GIT Projects\API\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.RazorTargetAssemblyInfo.cache
 D:\GIT Projects\API\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.dll
 D:\GIT Projects\API\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.pdb
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp2.1\Agenda_API.deps.json
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp2.1\Agenda_API.runtimeconfig.json
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp2.1\Agenda_API.runtimeconfig.dev.json
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp2.1\Agenda_API.dll
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\bin\Debug\netcoreapp2.1\Agenda_API.pdb
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.csprojAssemblyReference.cache
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.csproj.CoreCompileInputs.cache
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.RazorAssemblyInfo.cache
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.RazorAssemblyInfo.cs
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.AssemblyInfoInputs.cache
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.AssemblyInfo.cs
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.RazorTargetAssemblyInfo.cache
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.dll
+D:\GIT Projects\API\API_Agenda\Agenda_API\Agenda_API\obj\Debug\netcoreapp2.1\Agenda_API.pdb
